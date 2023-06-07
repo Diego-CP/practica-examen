@@ -48,7 +48,7 @@ jobs:
           AWS_REGION: us-east-1
         run: |
           RUN_ENV=dev
-          coverage run -m pytest A01781631/test/
+          coverage run -m pytest A01781631/tests/
           coverage report
           coverage html -d cc_report/
   package:
